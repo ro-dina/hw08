@@ -79,7 +79,7 @@ def main():
 
   # 初期化処理
   pg.init() 
-  pg.display.set_caption('ぼくのかんがえたさいきょうのげーむ II')
+  pg.display.set_caption('迷路')
   map_s  = pg.Vector2(16,9)     # マップの横・縦の配置数 
   disp_w = int(chip_s*map_s.x)
   disp_h = int(chip_s*map_s.y)
@@ -257,7 +257,7 @@ def main():
         frame += 1
         frm_str = f'{frame:05}'
         screen.blit(font.render(frm_str,True,'BLACK'),(10,10))
-        screen.blit(font.render(f'{reimu.pos}',True,'BLACK'),(10,20))
+        screen.blit(font.render(f'{reimu.pos}',True,'BLACK'),(15,35))
 
     elif framec == 1 :
         gool_img = 'クリア'
